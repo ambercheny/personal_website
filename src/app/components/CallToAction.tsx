@@ -20,24 +20,25 @@ export default function CallToAction() {
             Send me an email
           </a>
 
-          {/* Social Media Links */}
-          <div className="flex flex-wrap gap-8 md:gap-12 justify-center items-center">
-            <SocialLink href="https://github.com/ambercheny" icon={<Github />} label="GitHub" />
-            <SocialLink href="https://www.linkedin.com/in/yalinchen-amber/" icon={<Linkedin />} label="LinkedIn" />
-            <SocialLink href="https://scholar.google.com/citations?hl=en&user=kmWAKHoAAAAJ&gmla=AOv-ny-oViURYzaplVENKzBBtukUH5Cv2g5WB6oLmidqoMB4o2-jXCdERbXjaIR6szQOeSyVnqMCqeKtcFAx9p57OFjP02jmAceHZm3QtpE&sciund=4854242797381733583" icon={<GraduationCap />} label="Scholar" />
-            <SocialLink href="https://bionewsdigest.medium.com/" icon={<BookOpen />} label="Medium" />
-          </div>
-        </div>
+          {/* Icons and Map Layout */}
+          <div className="flex flex-col md:flex-row items-center gap-8 w-full max-w-4xl">
+            {/* Left: Social Icons and Location */}
+            <div className="flex flex-col gap-6 flex-1">
+              {/* Social Media Links */}
+              <div className="flex flex-wrap gap-8 md:gap-12 justify-center items-center">
+                <SocialLink href="https://github.com/ambercheny" icon={<Github />} label="GitHub" />
+                <SocialLink href="https://www.linkedin.com/in/yalinchen-amber/" icon={<Linkedin />} label="LinkedIn" />
+                <SocialLink href="https://scholar.google.com/citations?hl=en&user=kmWAKHoAAAAJ&gmla=AOv-ny-oViURYzaplVENKzBBtukUH5Cv2g5WB6oLmidqoMB4o2-jXCdERbXjaIR6szQOeSyVnqMCqeKtcFAx9p57OFjP02jmAceHZm3QtpE&sciund=4854242797381733583" icon={<GraduationCap />} label="Scholar" />
+                <SocialLink href="https://bionewsdigest.medium.com/" icon={<BookOpen />} label="Medium" />
+              </div>
 
-        {/* Bottom Info with Map */}
-        <div className="mt-1 pt-8 border-t border-white/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-primary-600/80 font-medium">
-              📍 Based in Seattle, WA • Available for collaborations
-            </p>
+              <p className="text-primary-600/80 font-medium text-center">
+                📍 Based in Seattle, WA • Available for collaborations
+              </p>
+            </div>
 
-            {/* MapMyVisitors Widget - 5rem x 5rem */}
-            <div id="mapmyvisitors-container" className="w-20 h-20 flex items-center justify-center">
+            {/* Right: MapMyVisitors Widget */}
+            <div id="mapmyvisitors-container" className="w-32 h-20 flex items-center justify-center">
               <Script
                 id="mapmyvisitors"
                 src="//mapmyvisitors.com/map.js?d=7ArMGnT4Sb1kqP6ciRYt_K3vO2mwp_7y1va6q2VBv-I&cl=ffffff&w=a"
