@@ -7,7 +7,7 @@ export default function AboutMe() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-8 items-start">
           {/* Left - Headshot and Social Links */}
-          <div className="flex flex-col items-center md:items-start gap-6">
+          <div className="flex flex-col items-center md:items-start gap-3">
             <div className="relative w-48 h-48 md:w-52 md:h-52 rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/headshot.jpg"
@@ -64,7 +64,7 @@ export default function AboutMe() {
             </div>
 
             {/* Email */}
-            <p className="text-sm text-primary-600 text-center md:text-left mt-0.5">
+            <p className="text-sm text-primary-600 text-center md:text-left mt-1">
               Email: <a href="mailto:ychen124@uw.edu" className="hover:underline">ychen124@uw.edu</a>
             </p>
           </div>
@@ -157,9 +157,9 @@ export default function AboutMe() {
                   href="/cv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-primary-500 px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-all shadow-md hover:shadow-lg hover:scale-105"
+                  className="group inline-flex items-center gap-2 bg-white text-primary-500 px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-all shadow-md hover:shadow-lg hover:scale-105"
                 >
-                  <Download className="w-5 h-5" />
+                  <Download className="w-5 h-5 group-hover:text-gray-400 transition-colors" />
                   Download CV
                 </a>
               </div>
