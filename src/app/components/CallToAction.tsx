@@ -36,8 +36,8 @@ export default function CallToAction() {
               📍 Based in Seattle, WA • Available for collaborations
             </p>
 
-            {/* MapMyVisitors Widget */}
-            <div id="mapmyvisitors-container">
+            {/* MapMyVisitors Widget - 5rem x 5rem */}
+            <div id="mapmyvisitors-container" className="w-20 h-20 flex items-center justify-center">
               <Script
                 id="mapmyvisitors"
                 src="//mapmyvisitors.com/map.js?d=7ArMGnT4Sb1kqP6ciRYt_K3vO2mwp_7y1va6q2VBv-I&cl=ffffff&w=a"
