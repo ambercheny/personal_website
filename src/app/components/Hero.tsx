@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Full Header Image Banner with Overlay Content */}
       <div className="relative w-full h-[75vh] md:h-[85vh] overflow-hidden">
         <Image
-          src="public/header.jpg"
+          src="/header.jpg"
           alt="Header banner"
           fill
           className="object-cover"
