@@ -22,10 +22,10 @@ export default function CallToAction() {
 
           {/* 2. Social Media Links - Increased gap for better spacing on mobile */}
           <div className="flex flex-wrap gap-8 md:gap-12 justify-center items-center">
-            <SocialLink href="https://github.com/yourusername" icon={<Github />} label="GitHub" />
-            <SocialLink href="https://linkedin.com/in/yourusername" icon={<Linkedin />} label="LinkedIn" />
-            <SocialLink href="#" icon={<GraduationCap />} label="Scholar" />
-            <SocialLink href="#" icon={<BookOpen />} label="Medium" />
+            <SocialLink href="https://github.com/ambercheny" icon={<Github />} label="GitHub" />
+            <SocialLink href="https://www.linkedin.com/in/yalinchen-amber/" icon={<Linkedin />} label="LinkedIn" />
+            <SocialLink href="https://scholar.google.com/citations?hl=en&user=kmWAKHoAAAAJ&gmla=AOv-ny-oViURYzaplVENKzBBtukUH5Cv2g5WB6oLmidqoMB4o2-jXCdERbXjaIR6szQOeSyVnqMCqeKtcFAx9p57OFjP02jmAceHZm3QtpE&sciund=4854242797381733583" icon={<GraduationCap />} label="Scholar" />
+            <SocialLink href="https://bionewsdigest.medium.com/" icon={<BookOpen />} label="Medium" />
           </div>
         </div>
 

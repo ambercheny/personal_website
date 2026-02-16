@@ -39,15 +39,15 @@ export default function ExperienceTimeline() {
         </h2>
 
         <div className="max-w-4xl mx-auto">
-          <div className="relative pl-16 md:pl-0">
+          <div className="relative pl-8 md:pl-0">
             {/* Vertical Timeline Line */}
-            <div className="absolute left-20 md:left-4 top-0 bottom-0 w-0.5 bg-white/30"></div>
+            <div className="absolute left-10 md:left-4 top-0 bottom-0 w-0.5 bg-white/30"></div>
 
             <div className="space-y-2">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative flex items-start">
                   {/* Timeline Dot */}
-                  <div className="absolute left-[4.625rem] md:left-1.5 top-6 w-5 h-5 rounded-full bg-white border-4 border-primary-500 shadow-md z-10"></div>
+                  <div className="absolute left-[2.3125rem] md:left-1.5 top-6 w-5 h-5 rounded-full bg-white border-4 border-primary-500 shadow-md z-10"></div>
 
                   {/* Year Label on Timeline */}
                   {exp.show_period && (
@@ -57,7 +57,7 @@ export default function ExperienceTimeline() {
                   )}
 
                   {/* Content on Right */}
-                  <div className="ml-24 md:ml-10 flex-1">
+                  <div className="ml-12 md:ml-10 flex-1">
                     {/* <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow border-l-2 border-white"> */}
                     <div className="py-2">
                       <div className="mb-2">
