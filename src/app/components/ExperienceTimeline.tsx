@@ -49,18 +49,18 @@ export default function ExperienceTimeline() {
             <div className="space-y-4">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative flex items-start">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-[3rem] md:left-1.5 top-6 w-5 h-5 rounded-full bg-white border-4 border-primary-500 shadow-md z-10"></div>
+                  {/* Timeline Dot - Hidden on mobile */}
+                  <div className="hidden md:block absolute md:left-1.5 top-6 w-5 h-5 rounded-full bg-white border-4 border-primary-500 shadow-md z-10"></div>
 
                   {/* Year Label on Timeline */}
                   {exp.show_period && (
-                    <div className="absolute left-1 md:-left-14 top-6 text-base md:text-2xl font-bold text-white whitespace-nowrap">
+                    <div className="absolute left-0 md:-left-14 top-6 text-base md:text-2xl font-bold text-white whitespace-nowrap">
                       {exp.show_period}
                     </div>
                   )}
 
                   {/* Content on Right */}
-                  <div className="ml-10 md:ml-10 flex-1">
+                  <div className="ml-12 md:ml-10 flex-1">
                     {/* <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow border-l-2 border-white"> */}
                     <div className="py-2">
                       <div className="mb-2">
