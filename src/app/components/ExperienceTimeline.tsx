@@ -42,25 +42,25 @@ export default function ExperienceTimeline() {
         </h2>
 
         <div className="max-w-4xl mx-auto">
-          <div className="relative pl-14 md:pl-0">
+          <div className="relative pl-4 md:pl-0">
             {/* Vertical Timeline Line */}
-            <div className="absolute left-16 md:left-4 top-0 bottom-0 w-0.5 bg-white/30"></div>
+            <div className="absolute left-8 md:left-4 top-0 bottom-0 w-0.5 bg-white/30"></div>
 
             <div className="space-y-4">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative flex items-start">
                   {/* Timeline Dot */}
-                  <div className="absolute left-[3.875rem] md:left-1.5 top-6 w-5 h-5 rounded-full bg-white border-4 border-primary-500 shadow-md z-10"></div>
+                  <div className="absolute left-[3rem] md:left-1.5 top-6 w-5 h-5 rounded-full bg-white border-4 border-primary-500 shadow-md z-10"></div>
 
                   {/* Year Label on Timeline */}
                   {exp.show_period && (
-                    <div className="absolute left-2 md:-left-14 top-6 text-base md:text-2xl font-bold text-white whitespace-nowrap">
+                    <div className="absolute left-1 md:-left-14 top-6 text-base md:text-2xl font-bold text-white whitespace-nowrap">
                       {exp.show_period}
                     </div>
                   )}
 
                   {/* Content on Right */}
-                  <div className="ml-20 md:ml-10 flex-1">
+                  <div className="ml-10 md:ml-10 flex-1">
                     {/* <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow border-l-2 border-white"> */}
                     <div className="py-2">
                       <div className="mb-2">
@@ -72,7 +72,7 @@ export default function ExperienceTimeline() {
                             href={exp.organizationUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-20 text-white font-semibold hover:text-white/80 hover:underline transition-all"
+                            className="text-20 text-white font-semibold underline hover:text-white/80 transition-all"
                           >
                             {exp.organization}
                           </a>
